@@ -11,6 +11,7 @@ body {
   margin: 44px auto;
   width: 317px;
   background: #1a1b21;
+  border-radius: 10px;
 }
 
 .info {
@@ -20,7 +21,7 @@ body {
 .user-pic {
   /* padding: 44px 116px; */
   /* max-width: 317px; */
-  width: 317px;
+  width: 100%;
   height: 317px;
   object-fit: cover;
   border-radius: 10px 10px 0px 0px;
@@ -32,84 +33,53 @@ body {
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
-  margin-bottom: 0px;
+  margin-top: 21px;
 }
 
 .user-job {
   color: #f3bf99;
-  margin-top: 1.5px;
-  margin-bottom: 0px;
+  margin-top: 6px;
   font-weight: 400;
   font-size: 12.8px;
   line-height: 15px;
 }
 
 .user-website {
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+
+.user-website > a {
   font-weight: 400;
   font-size: 10.24px;
   line-height: 150%;
-  margin-top: 8.81px;
+  margin-top: 10px;
   color: white;
   text-decoration: none;
 }
 
-.fa-envelope,
-.fa-linkedin {
+.info-btns {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.info-btns > Button {
   width: 115px;
-  height: 34px;
-  margin-top: 15px;
-  border-radius: 5px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  border: none;
+  height: 35px;
 }
 
-.fa-envelope {
-  background: white;
-  color: black;
-  padding: 10px;
-  margin-right: 17px;
+.about-interests {
+  margin: 25px 30px;
 }
 
-.fa-linkedin {
-  background: #5093e2;
-  color: white;
-  padding: 10px;
-}
-
-.about {
-  color: white;
-  margin: 33px 34px 26px 36px;
-}
-
-.about-title {
+.about-interests-title {
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
-  margin-bottom: 0px;
+  color: #dcdcdc;
 }
 
-.about-content {
-  font-weight: 400;
-  font-size: 10.24px;
-  line-height: 150%;
-  margin-top: 5px;
-}
-
-.interests {
-  margin: 33px 34px 26px 36px;
-}
-
-.interests-title {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 150%;
-  margin-bottom: 0px;
-  color: #f5f5f5;
-}
-
-.interests-content {
+.about-interests-content {
   font-weight: 400;
   font-size: 10.24px;
   line-height: 150%;
@@ -123,24 +93,10 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  border-radius: 0px 0px 10px 10px;
 }
 
-.fa-twitter {
-  background: #918e9b;
-  color: black;
-}
-
-.fa-facebook {
-  background: #918e9b;
-  color: black;
-}
-
-.fa-instagram {
-  background: #918e9b;
-  color: black;
-}
-
-.fa-github {
+.footer > Button {
   background: #918e9b;
   color: black;
 }

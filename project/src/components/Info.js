@@ -1,23 +1,24 @@
 import React from "react";
 import profilePic from "../images/profilePic.jpg";
+import { Button } from "antd";
+import { LinkedinOutlined, MailOutlined } from "@ant-design/icons";
 
 export default function Info() {
   return (
     <div className="info">
-      <img className="user-pic" src={profilePic} alt="" />
-      <h3 className="user-name">Purav Kansara</h3>
-      <h4 className="user-job"> Frontend Developer </h4>
-      <p>
-        <a
-          className="user-website"
-          href="https://www.linkedin.com/in/purav-kansara-90aa431b0"
-        >
+      <img className="user-pic" src={profilePic} alt="user pic" />
+      <div className="user-name">Purav Kansara</div>
+      <div className="user-job"> Frontend Developer </div>
+      <div className="user-website">
+        <a href="https://www.linkedin.com/in/purav-kansara-90aa431b0">
           puravkansara.com
         </a>
-      </p>
-      <div className="buttons">
-        <button className="fa-solid fa-envelope"> Email</button>
-        <button className="fa-brands fa-linkedin"> LinkedIn</button>
+      </div>
+      <div className="info-btns">
+        <Button icon={<MailOutlined />}>Email</Button>
+        <Button type="primary" icon={<LinkedinOutlined />}>
+          LinkedIn
+        </Button>
       </div>
     </div>
   );
